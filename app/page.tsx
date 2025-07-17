@@ -141,7 +141,7 @@ export default function HomePage() {
                   Filtros {selectedTags.length > 0 && `(${selectedTags.length})`}
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent>
+              <DropdownMenuContent className="max-w-[90vw]">
                 {allTags.map((tag) => (
                   <DropdownMenuCheckboxItem
                     key={tag}
