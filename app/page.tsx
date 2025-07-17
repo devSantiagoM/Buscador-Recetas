@@ -78,7 +78,7 @@ export default function HomePage() {
   }
 
   const [visibleCount, setVisibleCount] = useState(6);
-  const visibleRecipes = recipes.slice(0, visibleCount);
+  const visibleRecipes = filteredRecipes.slice(0, visibleCount);
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50">
       <Header />
@@ -141,7 +141,7 @@ export default function HomePage() {
                   Filtros {selectedTags.length > 0 && `(${selectedTags.length})`}
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="max-w-[90vw]">
+              <DropdownMenuContent className="max-w-[90vw] max-h-[60vh] overflow-y-auto">
                 {allTags.map((tag) => (
                   <DropdownMenuCheckboxItem
                     key={tag}
