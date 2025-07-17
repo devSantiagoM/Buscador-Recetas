@@ -23,7 +23,7 @@ export function Footer() {
           rel="noopener noreferrer"
           className="text-orange-500 hover:underline"
         >
-          <span>{process.env.NEXT_PUBLIC_PORTF_NAME}</span>
+          <span>{" "}{process.env.NEXT_PUBLIC_PORTF_NAME}</span>
         </a>
       </div>
     </footer>
